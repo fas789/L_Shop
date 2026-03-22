@@ -1,0 +1,370 @@
+/* style.css - Umamusume Theme */
+:root{
+  color-scheme: dark;
+  --bg: #1a0f1a;
+  --bg-gradient-start: #2a1a2a;
+  --bg-gradient-middle: #1a1a2a;
+  --bg-gradient-end: #0f0f1a;
+  --panel: #2a1a2a;
+  --panel2: #1f1220;
+  --border: #4a2a4a;
+  --text: #ffe6ff;
+  --muted: #d4b0d4;
+  --accent-pink: #ff69b4;
+  --accent-rose: #ff8c8c;
+  --accent-sakura: #ffb7c5;
+  --accent-blue: #6ea8fe;
+  --accent-sky: #87cefa;
+  --accent-purple: #c084fc;
+  --accent-gold: #ffd966;
+  --danger: #ff6b6b;
+  --ok: #6bff6b;
+  --shadow: 0 8px 24px rgba(0,0,0,.5);
+  --radius: 14px;
+  --gap: 14px;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji';
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin:0;
+  background: radial-gradient(800px 600px at 10% 20%, #ff69b420 0%, transparent 70%),
+              radial-gradient(700px 500px at 90% 80%, #6ea8fe20 0%, transparent 70%),
+              radial-gradient(600px 400px at 50% 50%, #c084fc20 0%, transparent 80%),
+              linear-gradient(135deg, #1a0f1a 0%, #0f0f1a 50%, #1a0f1a 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Декоративные элементы в стиле Umamusume */
+body::before {
+  content: "🐎 ✨ 🏇 ✨ 🐎";
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+a{ color: inherit; text-decoration: none; }
+button, input, select, textarea{ font: inherit; }
+
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.card{
+  background: linear-gradient(135deg, rgba(42,26,42,0.95) 0%, rgba(31,18,32,0.95) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,105,180,0.3);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255,105,180,0.2);
+  border-color: var(--accent-pink);
+}
+
+.row{ display:flex; gap: var(--gap); align-items:center; }
+.col{ display:flex; flex-direction:column; gap: var(--gap); }
+
+.btn{
+  border: 1px solid rgba(255,105,180,0.3);
+  background: linear-gradient(135deg, #2a1a2a, #1f1220);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,105,180,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover{ 
+  border-color: var(--accent-pink);
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255,105,180,0.3);
+}
+
+.btn.primary{
+  background: linear-gradient(135deg, #ff69b4, #ff8c8c, #ffb7c5);
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.btn.primary:hover{
+  filter: brightness(1.05);
+  box-shadow: 0 0 15px rgba(255,105,180,0.5);
+  transform: scale(1.02);
+}
+
+.btn.danger{
+  background: linear-gradient(135deg, #4a1a2a, #3a1220);
+  border-color: #ff6b6b;
+  color: #ffb7b7;
+}
+
+.btn.danger:hover{
+  border-color: #ff6b6b;
+  box-shadow: 0 0 10px rgba(255,107,107,0.3);
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff69b4, #ffb7c5);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  animation: sparkle 2s ease infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,105,180,0.4); }
+  50% { box-shadow: 0 0 0 4px rgba(255,105,180,0); }
+}
+
+.input, .select, .textarea{
+  width: 100%;
+  background: rgba(10,5,10,0.8);
+  border: 1px solid rgba(255,105,180,0.3);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus, .select:focus, .textarea:focus{
+  border-color: var(--accent-pink);
+  box-shadow: 0 0 0 2px rgba(255,105,180,0.2);
+  background: rgba(20,10,20,0.9);
+}
+
+.hint{ 
+  color: var(--muted); 
+  font-size: 13px;
+  background: linear-gradient(135deg, #ff69b410, #6ea8fe10);
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.hr{ 
+  height: 2px; 
+  background: linear-gradient(90deg, transparent, var(--accent-pink), var(--accent-blue), transparent);
+  border: 0; 
+  margin: 12px 0; 
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+@media (max-width: 980px){ .grid{ grid-template-columns: repeat(2,1fr);} }
+@media (max-width: 640px){ .grid{ grid-template-columns: 1fr; } }
+
+.toast{
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff69b4, #ff8c8c, #ffb7c5);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 4px 20px rgba(255,105,180,0.4);
+  color: white;
+  font-weight: bold;
+  max-width: min(560px, calc(100vw - 36px));
+  z-index: 99;
+  animation: slideUp 0.3s ease, glowPulse 2s ease infinite;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(255,105,180,0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(255,105,180,0.8);
+  }
+}
+
+/* Анимация для карточек товаров */
+.card {
+  animation: fadeInUp 0.4s ease backwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.05s; }
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.15s; }
+.card:nth-child(4) { animation-delay: 0.2s; }
+.card:nth-child(5) { animation-delay: 0.25s; }
+.card:nth-child(6) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Стили для ссылок в навигации */
+.nav a {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-pink), var(--accent-blue));
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 80%;
+}
+
+.nav a.active {
+  background: linear-gradient(135deg, rgba(255,105,180,0.2), rgba(110,168,254,0.2));
+  border-color: var(--accent-pink);
+}
+
+/* Стили для скроллбара */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--panel);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--accent-pink), var(--accent-blue));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--accent-rose), var(--accent-sky));
+}
+
+/* Эффект свечения для активных элементов */
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+  animation: focusGlow 0.3s ease;
+}
+
+@keyframes focusGlow {
+  from {
+    box-shadow: 0 0 0 0 rgba(255,105,180,0);
+  }
+  to {
+    box-shadow: 0 0 0 3px rgba(255,105,180,0.3);
+  }
+}
+
+/* Стили для кнопок в корзине */
+.btn.primary:active {
+  transform: scale(0.98);
+}
+
+/* Декоративные элементы для заголовков */
+h1, h2, h3, .brand {
+  background: linear-gradient(135deg, #ff69b4, #ffb7c5, #6ea8fe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
+/* Анимация для бейджа корзины */
+.badge {
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+/* Стили для селектов */
+.select option {
+  background: var(--panel);
+  color: var(--text);
+}
+
+/* Стили для чекбоксов */
+input[type="checkbox"] {
+  accent-color: var(--accent-pink);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0.5;
+}
+
+/* Стили для footer информации */
+.hint i, .hint em {
+  color: var(--accent-pink);
+}
