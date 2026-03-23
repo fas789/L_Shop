@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "title": "Фигурка Special Week 1/7",
+    "price": 399,
+    "isAvailable": true,
+    "description": "Высококачественная фигурка Special Week в полный рост. Идеально для коллекции!",
+    "categories": ["figure"],
+    "images": { "preview": "" },
+    "discount": 10,
+    "umaName": "Special Week"
+  },
+  {
+    "id": "2",
+    "title": "Футболка с Tokai Teio",
+    "price": 99,
+    "isAvailable": true,
+    "description": "Хлопковая футболка с принтом Tokai Teio. Размеры S-XXL.",
+    "categories": ["clothing"],
+    "images": { "preview": "" },
+    "discount": 0,
+    "umaName": "Tokai Teio"
+  },
+  {
+    "id": "3",
+    "title": "Брелок Silence Suzuka",
+    "price": 25,
+    "isAvailable": true,
+    "description": "Акриловый брелок с аниме-артом Silence Suzuka. Отличный подарок!",
+    "categories": ["keychain"],
+    "images": { "preview": "" },
+    "discount": 15,
+    "umaName": "Silence Suzuka"
+  },
+  {
+    "id": "4",
+    "title": "Постер Mejiro McQueen",
+    "price": 45,
+    "isAvailable": false,
+    "description": "Большой постер A2 с Mejiro McQueen. Временно нет в наличии.",
+    "categories": ["poster"],
+    "images": { "preview": "" },
+    "discount": 0,
+    "umaName": "Mejiro McQueen"
+  },
+  {
+    "id": "5",
+    "title": "Кружка Gold Ship",
+    "price": 35,
+    "isAvailable": true,
+    "description": "Керамическая кружка с Gold Ship. Объем 350 мл.",
+    "categories": ["accessory"],
+    "images": { "preview": "" },
+    "discount": 5,
+    "umaName": "Gold Ship"
+  },
+  {
+    "id": "6",
+    "title": "Фигурка Vodka 1/8",
+    "price": 159,
+    "isAvailable": true,
+    "description": "Динамичная фигурка Vodka в гоночном костюме.",
+    "categories": ["figure"],
+    "images": { "preview": "" },
+    "discount": 0,
+    "umaName": "Vodka"
+  },
+  {
+    "id": "7",
+    "title": "Худи Daiwa Scarlet",
+    "price": 159,
+    "isAvailable": true,
+    "description": "Теплое худи с вышивкой Daiwa Scarlet.",
+    "categories": ["clothing"],
+    "images": { "preview": "" },
+    "discount": 12,
+    "umaName": "Daiwa Scarlet"
+  },
+  {
+    "id": "8",
+    "title": "Набор наклеек Umamusume",
+    "price": 12,
+    "isAvailable": true,
+    "description": "10 наклеек с разными персонажами Umamusume.",
+    "categories": ["accessory"],
+    "images": { "preview": "" },
+    "discount": 0,
+    "umaName": ""
+  },
+  {
+    "id": "9",
+    "title": "Чехол для телефона Tokai Teio",
+    "price": 55,
+    "isAvailable": true,
+    "description": "Силиконовый чехол с дизайном Tokai Teio.",
+    "categories": ["accessory"],
+    "images": { "preview": "" },
+    "discount": 0,
+    "umaName": "Tokai Teio"
+  },
+  {
+    "id": "10",
+    "title": "Коллекционная карта Special Week",
+    "price": 85,
+    "isAvailable": true,
+    "description": "Лимитированная коллекционная карта Special Week.",
+    "categories": ["figure"],
+    "images": { "preview": "" },
+    "discount": 20,
+    "umaName": "Special Week"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1772724988560",
+    "email": "test@test.com",
+    "password": "123456",
+    "name": "Test"
+  },
+  {
+    "id": "1773071666551",
+    "createdAt": "2026-03-09T15:54:26.551Z",
+    "name": "desdun",
+    "password": "11111111",
+    "email": "desdun@khatezhino.com",
+    "phone": "+375296939320",
+    "login": "Danik"
+  },
+  {
+    "id": "1774212716010",
+    "createdAt": "2026-03-22T20:51:56.011Z",
+    "name": "f",
+    "password": "1111",
+    "phone": "1"
+  },
+  {
+    "id": "1774214579189",
+    "createdAt": "2026-03-22T21:22:59.189Z",
+    "name": "Аги",
+    "password": "1111",
+    "login": "Ани",
+    "favoriteUma": "Tokai Teio"
+  }
+]

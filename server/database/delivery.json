@@ -1,0 +1,156 @@
+{
+  "1773071666551": [
+    {
+      "id": "1773072021156",
+      "userId": "1773071666551",
+      "createdAt": "2026-03-09T16:00:21.157Z",
+      "address": {
+        "country": "Беларусь",
+        "town": "Минск (Хатежино)",
+        "street": "Одинцова",
+        "houseNumber": "97/63"
+      },
+      "contact": {
+        "phone": "+375296939320",
+        "email": "desdun@khatezhino.com"
+      },
+      "paymentMethod": "card",
+      "comment": "Мама - Юлия Анатольевна, номер +375 29 693 93 15",
+      "items": [
+        {
+          "product": {
+            "id": "6",
+            "title": "Смартфон Android PixelNova",
+            "price": 45999,
+            "isAvailable": true,
+            "description": "Чистый Android, отличные фото, быстрые обновления.",
+            "categories": [
+              "electronics",
+              "phones"
+            ],
+            "images": {
+              "preview": ""
+            },
+            "discount": 0
+          },
+          "quantity": 3,
+          "unitPrice": 45999,
+          "lineTotal": 137997
+        }
+      ],
+      "total": 137997
+    }
+  ],
+  "1774212716010": [
+    {
+      "id": "1774212740385",
+      "userId": "1774212716010",
+      "createdAt": "2026-03-22T20:52:20.385Z",
+      "address": {},
+      "contact": {
+        "phone": "24",
+        "email": "a"
+      },
+      "paymentMethod": "card",
+      "items": [
+        {
+          "product": {
+            "id": "1",
+            "title": "Смартфон iPhone 14",
+            "price": 79999,
+            "isAvailable": true,
+            "description": "Камера, OLED, быстрая зарядка — отличный вариант на каждый день.",
+            "categories": [
+              "electronics",
+              "phones"
+            ],
+            "images": {
+              "preview": ""
+            },
+            "discount": 10
+          },
+          "quantity": 9,
+          "unitPrice": 71999,
+          "lineTotal": 647991
+        }
+      ],
+      "total": 647991
+    }
+  ],
+  "1774214579189": [
+    {
+      "id": "1774214626489",
+      "userId": "1774214579189",
+      "createdAt": "2026-03-22T21:23:46.489Z",
+      "address": {},
+      "contact": {
+        "phone": "7у463473",
+        "email": "ава"
+      },
+      "paymentMethod": "card",
+      "items": [
+        {
+          "product": {
+            "id": "1",
+            "title": "Фигурка Special Week 1/7",
+            "price": 399,
+            "isAvailable": true,
+            "description": "Высококачественная фигурка Special Week в полный рост. Идеально для коллекции!",
+            "categories": [
+              "figure"
+            ],
+            "images": {
+              "preview": ""
+            },
+            "discount": 10,
+            "umaName": "Special Week"
+          },
+          "quantity": 1,
+          "unitPrice": 359,
+          "lineTotal": 359
+        },
+        {
+          "product": {
+            "id": "4",
+            "title": "Постер Mejiro McQueen",
+            "price": 45,
+            "isAvailable": false,
+            "description": "Большой постер A2 с Mejiro McQueen. Временно нет в наличии.",
+            "categories": [
+              "poster"
+            ],
+            "images": {
+              "preview": ""
+            },
+            "discount": 0,
+            "umaName": "Mejiro McQueen"
+          },
+          "quantity": 1,
+          "unitPrice": 45,
+          "lineTotal": 45
+        },
+        {
+          "product": {
+            "id": "8",
+            "title": "Набор наклеек Umamusume",
+            "price": 12,
+            "isAvailable": true,
+            "description": "10 наклеек с разными персонажами Umamusume.",
+            "categories": [
+              "accessory"
+            ],
+            "images": {
+              "preview": ""
+            },
+            "discount": 0,
+            "umaName": ""
+          },
+          "quantity": 4,
+          "unitPrice": 12,
+          "lineTotal": 48
+        }
+      ],
+      "total": 452
+    }
+  ]
+}
